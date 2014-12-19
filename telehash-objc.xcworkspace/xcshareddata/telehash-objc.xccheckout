@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8B55E4C7-BDC5-4868-8133-8191B228AE96</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF6B9F4DEBBF57EFD6AC093F6BE218C1B288320D</key>
+		<string>https://github.com/telehash/telehash-c</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF6B9F4DEBBF57EFD6AC093F6BE218C1B288320D</key>
+		<string>telehash-c/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/telehash/telehash-c</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF6B9F4DEBBF57EFD6AC093F6BE218C1B288320D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF6B9F4DEBBF57EFD6AC093F6BE218C1B288320D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>telehash-c</string>
+		</dict>
+	</array>
+</dict>
+</plist>

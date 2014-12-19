@@ -1,0 +1,6 @@
+[submodule "telehash-c"]
+	path = telehash-c
+	url = https://github.com/dwaite/telehash-c.git
+[submodule "telehash.org"]
+	path = telehash.org
+	url = https://github.com/telehash/telehash.org.git
