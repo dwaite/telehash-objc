@@ -2,9 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TelehashSwift/TelehashSwift.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:telehash-c.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:objc/Telehash.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage.checkout/SwiftyJSON/SwiftyJSON.xcodeproj">
    </FileRef>
 </Workspace>

@@ -4,3 +4,6 @@
 [submodule "telehash.org"]
 	path = telehash.org
 	url = https://github.com/telehash/telehash.org.git
+[submodule "Carthage.checkout/SwiftyJSON"]
+	path = Carthage.checkout/SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git

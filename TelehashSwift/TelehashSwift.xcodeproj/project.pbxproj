@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6320F0681A53302000E10DAB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6320F0671A53302000E10DAB /* SwiftyJSON.framework */; };
+		FCCF8B431A4BD2A7002A3D6C /* TelehashSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCF8B421A4BD2A7002A3D6C /* TelehashSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCCF8B491A4BD2A7002A3D6C /* TelehashSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCF8B3D1A4BD2A7002A3D6C /* TelehashSwift.framework */; };
+		FCCF8B501A4BD2A7002A3D6C /* THSPacketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF8B4F1A4BD2A7002A3D6C /* THSPacketTests.swift */; };
+		FCCF8B621A4BDF4E002A3D6C /* TelehashSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCF8B611A4BDF4E002A3D6C /* TelehashSwift-Bridging-Header.h */; };
+		FCCF8B671A4BE3BC002A3D6C /* THSPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF8B661A4BE3BC002A3D6C /* THSPacket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCCF8B4A1A4BD2A7002A3D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCCF8B341A4BD2A7002A3D6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCF8B3C1A4BD2A7002A3D6C;
+			remoteInfo = TelehashSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6320F0671A53302000E10DAB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Checkouts/SwiftyJSON/build/Debug/SwiftyJSON.framework; sourceTree = "<group>"; };
+		FCCF8B3D1A4BD2A7002A3D6C /* TelehashSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TelehashSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCF8B411A4BD2A7002A3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCF8B421A4BD2A7002A3D6C /* TelehashSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TelehashSwift.h; sourceTree = "<group>"; };
+		FCCF8B481A4BD2A7002A3D6C /* TelehashSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelehashSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCF8B4E1A4BD2A7002A3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCF8B4F1A4BD2A7002A3D6C /* THSPacketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THSPacketTests.swift; sourceTree = "<group>"; };
+		FCCF8B611A4BDF4E002A3D6C /* TelehashSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TelehashSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCCF8B661A4BE3BC002A3D6C /* THSPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THSPacket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCF8B391A4BD2A7002A3D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6320F0681A53302000E10DAB /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCF8B451A4BD2A7002A3D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCF8B491A4BD2A7002A3D6C /* TelehashSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCCF8B331A4BD2A7002A3D6C = {
+			isa = PBXGroup;
+			children = (
+				6320F0671A53302000E10DAB /* SwiftyJSON.framework */,
+				FCCF8B611A4BDF4E002A3D6C /* TelehashSwift-Bridging-Header.h */,
+				FCCF8B3F1A4BD2A7002A3D6C /* TelehashSwift */,
+				FCCF8B4C1A4BD2A7002A3D6C /* TelehashSwiftTests */,
+				FCCF8B3E1A4BD2A7002A3D6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCF8B3E1A4BD2A7002A3D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF8B3D1A4BD2A7002A3D6C /* TelehashSwift.framework */,
+				FCCF8B481A4BD2A7002A3D6C /* TelehashSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCF8B3F1A4BD2A7002A3D6C /* TelehashSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF8B421A4BD2A7002A3D6C /* TelehashSwift.h */,
+				FCCF8B401A4BD2A7002A3D6C /* Supporting Files */,
+				FCCF8B661A4BE3BC002A3D6C /* THSPacket.swift */,
+			);
+			path = TelehashSwift;
+			sourceTree = "<group>";
+		};
+		FCCF8B401A4BD2A7002A3D6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF8B411A4BD2A7002A3D6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCCF8B4C1A4BD2A7002A3D6C /* TelehashSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF8B4F1A4BD2A7002A3D6C /* THSPacketTests.swift */,
+				FCCF8B4D1A4BD2A7002A3D6C /* Supporting Files */,
+			);
+			path = TelehashSwiftTests;
+			sourceTree = "<group>";
+		};
+		FCCF8B4D1A4BD2A7002A3D6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF8B4E1A4BD2A7002A3D6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FCCF8B3A1A4BD2A7002A3D6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCF8B431A4BD2A7002A3D6C /* TelehashSwift.h in Headers */,
+				FCCF8B621A4BDF4E002A3D6C /* TelehashSwift-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FCCF8B3C1A4BD2A7002A3D6C /* TelehashSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCF8B531A4BD2A7002A3D6C /* Build configuration list for PBXNativeTarget "TelehashSwift" */;
+			buildPhases = (
+				FCCF8B381A4BD2A7002A3D6C /* Sources */,
+				FCCF8B391A4BD2A7002A3D6C /* Frameworks */,
+				FCCF8B3A1A4BD2A7002A3D6C /* Headers */,
+				FCCF8B3B1A4BD2A7002A3D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelehashSwift;
+			productName = TelehashSwift;
+			productReference = FCCF8B3D1A4BD2A7002A3D6C /* TelehashSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCCF8B471A4BD2A7002A3D6C /* TelehashSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCF8B561A4BD2A7002A3D6C /* Build configuration list for PBXNativeTarget "TelehashSwiftTests" */;
+			buildPhases = (
+				FCCF8B441A4BD2A7002A3D6C /* Sources */,
+				FCCF8B451A4BD2A7002A3D6C /* Frameworks */,
+				FCCF8B461A4BD2A7002A3D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCF8B4B1A4BD2A7002A3D6C /* PBXTargetDependency */,
+			);
+			name = TelehashSwiftTests;
+			productName = TelehashSwiftTests;
+			productReference = FCCF8B481A4BD2A7002A3D6C /* TelehashSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCF8B341A4BD2A7002A3D6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Alkaline Solutions";
+				TargetAttributes = {
+					FCCF8B3C1A4BD2A7002A3D6C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FCCF8B471A4BD2A7002A3D6C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = FCCF8B371A4BD2A7002A3D6C /* Build configuration list for PBXProject "TelehashSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCCF8B331A4BD2A7002A3D6C;
+			productRefGroup = FCCF8B3E1A4BD2A7002A3D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCF8B3C1A4BD2A7002A3D6C /* TelehashSwift */,
+				FCCF8B471A4BD2A7002A3D6C /* TelehashSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCCF8B3B1A4BD2A7002A3D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCF8B461A4BD2A7002A3D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCF8B381A4BD2A7002A3D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCF8B671A4BE3BC002A3D6C /* THSPacket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCF8B441A4BD2A7002A3D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCF8B501A4BD2A7002A3D6C /* THSPacketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCCF8B4B1A4BD2A7002A3D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCF8B3C1A4BD2A7002A3D6C /* TelehashSwift */;
+			targetProxy = FCCF8B4A1A4BD2A7002A3D6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCCF8B511A4BD2A7002A3D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCCF8B521A4BD2A7002A3D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCCF8B541A4BD2A7002A3D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/telehash-objc-hdddwjlzvmqyvacvljqiafgvedku/Build/Products/Debug",
+					"/Users/dwaite/telehash/telehash-objc/Carthage/Checkouts/SwiftyJSON/build/Debug",
+					"/Users/david/telehash-objc/Carthage/Checkouts/SwiftyJSON/build/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TelehashSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCCF8B551A4BD2A7002A3D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/telehash-objc-hdddwjlzvmqyvacvljqiafgvedku/Build/Products/Debug",
+					"/Users/dwaite/telehash/telehash-objc/Carthage/Checkouts/SwiftyJSON/build/Debug",
+					"/Users/david/telehash-objc/Carthage/Checkouts/SwiftyJSON/build/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TelehashSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FCCF8B571A4BD2A7002A3D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TelehashSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCCF8B581A4BD2A7002A3D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TelehashSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCF8B371A4BD2A7002A3D6C /* Build configuration list for PBXProject "TelehashSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCF8B511A4BD2A7002A3D6C /* Debug */,
+				FCCF8B521A4BD2A7002A3D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCF8B531A4BD2A7002A3D6C /* Build configuration list for PBXNativeTarget "TelehashSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCF8B541A4BD2A7002A3D6C /* Debug */,
+				FCCF8B551A4BD2A7002A3D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCF8B561A4BD2A7002A3D6C /* Build configuration list for PBXNativeTarget "TelehashSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCF8B571A4BD2A7002A3D6C /* Debug */,
+				FCCF8B581A4BD2A7002A3D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCF8B341A4BD2A7002A3D6C /* Project object */;
+}
