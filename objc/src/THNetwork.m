@@ -8,13 +8,8 @@
 
 #import "THNetwork.h"
 #import "THExchange.h"
-#import "THLob.h"
-
-#import "../../telehash-c/include/e3x.h"
-
-@interface THNetwork()
-@property (readonly) e3x_self_t network;
-@end
+#import "THPacket.h"
+#import "THInternal.inc"
 
 @implementation THNetwork
 
@@ -52,9 +47,9 @@
   e3x_self_free(_network);
 }
 
--(THLob*) decryptMessage: (NSData*) message {
+-(THPacket*) decryptMessage: (NSData*) message {
   lob_t decrypted = e3x_self_decrypt(_network, lob_parse((const uint8_t*)message.bytes, message.length));
-  return [[THLob alloc ]initWithCLob: decrypted];
+  return [[THPacket alloc ]initWithCLob: decrypted];
 }
 
 @end

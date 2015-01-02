@@ -9,6 +9,8 @@
 #ifndef telehash_THEvent_h
 #define telehash_THEvent_h
 
+@import Foundation;
+
 @interface THEvent : NSObject
 -(instancetype)init;
 

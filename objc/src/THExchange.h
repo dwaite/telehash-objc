@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 Alkaline Solutions. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "THLob.h"
+@import Foundation;
 
 @class THNetwork;
 @class THMessage;
@@ -21,24 +20,25 @@ typedef NS_ENUM(NSUInteger, THCipherSet) {
   THCipherSet3A = 0x3a
 };
 
+typedef uint32_t THAt;
+
 @interface THExchange : NSObject
 
 -(instancetype) initWithNetwork: (THNetwork *) network
                       cipherset: (THCipherSet) csid
-                          inner: (THLob *)     inner
-                             at: (NSDate *)    at;
--(void) dealloc;
+                          inner: (NSData *)     inner;
+-(NSData*) createMessage: (NSData*) inner;
+-(BOOL) verifyMessage:(NSData*) outer error: (NSError**) error;
 
--(THMessage*) createMessage: (THLob*) inner sequence: (uint32_t) seq;
--(uint8_t) verify:(THLob*) message;
--(uint32_t) sync: (THLob*) handshake;
--(THMessage*) handshake: (THLob*) inner sequence: (uint32_t) seq;
+-(THExchange*) sync: (NSData*) handshake;
+-(THMessage*) handshake;
 
--(THLob*) receive: (NSData*) packet;
--(NSData*) send: (THLob*) message;
+-(NSData*) receive: (NSData*) packet;
+-(NSData*) send: (NSData*) message;
 
--(uint32_t) nextChannelId;
+-(NSUInteger) channelId: (NSData*) incoming;
 
-@property (readonly) NSString* token; // or NSData?
-@property (readonly) uint32_t at;     // or NSDate
+@property (readonly) NSData* token;
+@property (readwrite) THAt incomingAt;
+@property (readwrite) THAt outgoingAt;
 @end

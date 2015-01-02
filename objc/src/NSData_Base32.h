@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Alkaline Solutions. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSData (Base32)
 -(instancetype) initWithBase32EncodedString: (NSString*) encodedString;

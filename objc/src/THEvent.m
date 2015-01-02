@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "THEvent.h"
-#include "../../telehash-c/include/e3x.h"
-@interface THEvent()
-{
-  e3x_event_t event;
-}
-@end
 
 @implementation THEvent
 

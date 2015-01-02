@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Alkaline Solutions. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "THLob.h"
+@import Foundation;
+#import "THPacket.h"
 
 @class THEvent;
 
@@ -16,23 +16,29 @@ typedef NS_ENUM(NSUInteger, THChannelState) {
   THChannelStateOpened,
   THChannelStateClosed,
 };
+
 @interface THChannel : NSObject
 
--(instancetype) initWithOpen:(THLob*)open;
+-(instancetype) initWithOpen:(NSData*)open;
 -(void) dealloc;
 
--(void) ev: (THEvent*) event;
+-(BOOL)receive: (NSData*) inner error: (NSError**) error;
+-(void) sync: (uint8_t) sync;
 
--(uint8_t)receive: (THLob*) inner;
--(void) sync: (BOOL) sync;
--(THLob*) receiving;
--(THLob*) packet;
--(uint8_t) send: (THLob*) inner;
--(THLob*) sending;
+-(NSData*) receiving;
+-(NSData*) oob;
+-(NSData*) packet;
 
-@property (readonly) uint32_t channel_id;
-@property (readonly) THLob* open;
+-(uint8_t) send: (NSData*) inner;
+-(NSData*) sending;
+
+
+@property (readwrite) NSUInteger size;
+@property (readwrite) NSTimeInterval timeout;
+@property (readonly) NSString *uid;
+@property (readonly) NSUInteger channel_id;
+@property (readonly) NSString *channel_id_str;
+@property (readonly) NSData* open;
 @property (readonly) THChannelState state;
-@property (readonly) NSUInteger size;
 
 @end

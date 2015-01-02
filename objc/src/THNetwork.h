@@ -6,10 +6,10 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @class THExchange;
-@class THLob;
+@class THPacket;
 
 @interface THNetwork :NSObject
 
@@ -19,9 +19,10 @@
 +(NSString*) lastError;
 +(NSData*) generateSecrets;
 
+
 -(instancetype) initWithSecrets: (NSData*) secrets andKeys: (NSData*) keys;
 -(void) dealloc;
 
--(THLob*) decryptMessage: (NSData*) message;
+-(THPacket*) decryptMessage: (NSData*) message;
 @property (readwrite) NSDate *lastHandshake;
 @end
